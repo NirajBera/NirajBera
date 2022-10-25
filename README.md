@@ -19,3 +19,8 @@
 
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nirajbera&" alt="nirajbera" /></p>
+
+
+<h3 align="left">Holopins:</h3>
+
+[![@nirajbera's Holopin board](https://holopin.me/nirajbera)](https://holopin.io/@nirajbera)
