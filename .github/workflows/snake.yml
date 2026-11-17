@@ -1,9 +1,9 @@
-name: Generate contribution snake
+name: Update profile telemetry and snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # every 12 hours
-  workflow_dispatch:          # run manually from the Actions tab
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:         # run manually from the Actions tab
   push:
     branches: [main]
 
@@ -11,15 +11,23 @@ permissions:
   contents: write
 
 jobs:
-  snake:
+  build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Build telemetry card
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 .github/scripts/telemetry.py
+
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=000000&color_dots=eeeeee,cccccc,999999,666666,333333
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=ffffff&color_dots=161616,444444,777777,aaaaaa,ffffff
+            dist/github-contribution-grid-snake.svg?color_snake=#000000&color_dots=#e5e5e5,#bdbdbd,#888888,#555555,#222222
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#ffffff&color_dots=#1f1f1f,#4d4d4d,#808080,#b3b3b3,#ffffff
 
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
