@@ -39,10 +39,10 @@ mx = max([v for col in grid for v in col] + [1])
 
 
 def build(dark):
-    bg, empty = ("#0d1117", "#202327") if dark else ("#ffffff", "#e6e6e6")
+    bg, empty = ("#0b0b0b", "#1e1e1e") if dark else ("#ffffff", "#e6e6e6")
     lv = ["#4a4a4a", "#7a7a7a", "#b0b0b0", "#ffffff"] if dark else ["#bdbdbd", "#8a8a8a", "#4d4d4d", "#000000"]
     snake = "#ffffff" if dark else "#000000"
-    s = f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}"><rect width="{W}" height="{H}" rx="12" fill="{bg}"/>'
+    s = f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}"><rect width="{W}" height="{H}" rx="6" fill="{bg}"/>'
     for i, (c, r) in enumerate(order):
         v = grid[c][r]
         if v:
