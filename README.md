@@ -41,9 +41,9 @@
 
 <div align="center">
 <a name="snake"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NirajBera/NirajBera/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NirajBera/NirajBera/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake eating my commits" src="https://raw.githubusercontent.com/NirajBera/NirajBera/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NirajBera/NirajBera/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NirajBera/NirajBera/output/snake-light.svg" />
+  <img alt="contribution snake eating my commits" src="https://raw.githubusercontent.com/NirajBera/NirajBera/output/snake-dark.svg" width="100%" />
 </picture></a>
 </div>
 
