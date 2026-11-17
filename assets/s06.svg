@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="44" viewBox="0 0 900 44">
+<defs></defs>
+<style>text{font-family:'JetBrains Mono','Cascadia Code','SF Mono',Consolas,'DejaVu Sans Mono','Liberation Mono',monospace;white-space:pre}.bl{animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}.lv{animation:lv 1.6s ease-in-out infinite}@keyframes lv{50%{opacity:.3}}</style>
+<text x="2" y="29" font-size="20" fill="#9a9a9a" textLength="171" lengthAdjust="spacingAndGlyphs">// <tspan fill="#bcbcbc" font-weight="700">06</tspan> — holopins</text><text class="bl" x="181" y="29" font-size="20" fill="#bcbcbc">▍</text><line x1="203" y1="22" x2="898" y2="22" stroke="#404040" stroke-width="1.5"/><circle cx="898" cy="22" r="3" fill="#bcbcbc"/></svg>
