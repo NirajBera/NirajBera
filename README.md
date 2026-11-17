@@ -1,26 +1,70 @@
-<h1 align="center">Hi 👋, I'm Niraj Bera</h1>
-<h3 align="center">A passionate full stack web developer from India</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=nirajbera&label=Profile%20views&color=0e75b6&style=flat" alt="nirajbera" /> </p>
+<img src="assets/header.svg" alt="Niraj Bera — developer coding on a laptop at night" width="100%" />
 
-- 👨‍💻 All of my projects are available at [https://github.com/NirajBera](https://github.com/NirajBera)
+<br/>
 
-- 💬 Ask me about **Anythig About WebDevelopment or AppDevelopment**
+[![Techiebutler](https://img.shields.io/badge/TECHIEBUTLER-ffffff?style=flat-square&logo=vercel&logoColor=000000)](https://techiebutler.com)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-1a1a1a?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niraj-bera-09b9ba1a2/)
+[![Email](https://img.shields.io/badge/EMAIL-1a1a1a?style=flat-square&logo=gmail&logoColor=white)](mailto:beraniraj2503@gmail.com)
+[![GitHub](https://img.shields.io/badge/GITHUB-1a1a1a?style=flat-square&logo=github&logoColor=white)](https://github.com/NirajBera)
+![Views](https://komarev.com/ghpvc/?username=nirajbera&label=VIEWS&color=555555&style=flat-square)
 
-- 📫 How to reach me **beraniraj2503@gmail.com**
+</div>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/niraj-bera-09b9ba1a2/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/niraj-bera-09b9ba1a2/" height="30" width="40" /></a>
-</p>
+<br/>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+<img src="assets/s01.svg" alt="01 — about" width="100%" />
+<img src="assets/editor.svg" alt="VS Code: const niraj = { role: Full Stack Web Developer }" width="100%" />
 
+<img src="assets/bento.svg" alt="bento dashboard: scroll UI, profile card, roadmap board, merged PR, learning" width="100%" />
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nirajbera&" alt="nirajbera" /></p>
+<br/>
 
+<img src="assets/s02.svg" alt="02 — projects" width="100%" />
+<img src="assets/projects.svg" alt="project cards: scrolllab, constellation-field, cookie-consent, 3d-text-roller" width="100%" />
 
-<h3 align="left">Holopins:</h3>
+<br/>
+
+<img src="assets/s03.svg" alt="03 — stack" width="100%" />
+<img src="assets/stack.svg" alt="tech stack orbiting around NB" width="100%" />
+
+<br/>
+
+<img src="assets/s04.svg" alt="04 — telemetry" width="100%" />
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=NirajBera&show_icons=true&hide_border=true&bg_color=000000&title_color=ffffff&text_color=bbbbbb&icon_color=ffffff&count_private=true" alt="GitHub stats" />
+<img height="170" src="https://streak-stats.demolab.com?user=NirajBera&hide_border=true&background=000000&stroke=333333&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=aaaaaa&dates=777777" alt="Streak" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=NirajBera&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&area_color=ffffff&title_color=ffffff&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" alt="Contribution telemetry" width="100%" />
+
+</div>
+
+<br/>
+
+<img src="assets/s05.svg" alt="05 — snake" width="100%" />
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NirajBera/NirajBera/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NirajBera/NirajBera/output/github-contribution-grid-snake.svg" />
+  <img alt="contribution snake eating my commits" src="https://raw.githubusercontent.com/NirajBera/NirajBera/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</picture>
+</div>
+
+<br/>
+
+<img src="assets/s06.svg" alt="06 — holopins" width="100%" />
+
+<div align="center">
 
 [![@nirajbera's Holopin board](https://holopin.me/nirajbera)](https://holopin.io/@nirajbera)
+
+</div>
+
+<br/>
+
+<img src="assets/s07.svg" alt="07 — contact" width="100%" />
+<a href="mailto:beraniraj2503@gmail.com"><img src="assets/footer.svg" alt="chat: got an idea that should feel alive? beraniraj2503@gmail.com" width="100%" /></a>
