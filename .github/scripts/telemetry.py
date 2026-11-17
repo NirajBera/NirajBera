@@ -19,6 +19,31 @@ def fetch():
     return json.load(urllib.request.urlopen(req))
 
 
+def public_calendar():
+    """Contribution days as shown on the public profile page (includes private contributions when the
+    profile has 'Private contributions' turned on). Returns [(date, count, row, col)] or [] on failure."""
+    import re
+    try:
+        fx = os.environ.get("FIXTURE_HTML")
+        if fx:
+            html = open(fx, encoding="utf-8").read()
+        else:
+            req = urllib.request.Request(f"https://github.com/users/{USER}/contributions", headers={"User-Agent": "Mozilla/5.0 profile-readme"})
+            html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "replace")
+        tips = {}
+        for m in re.finditer(r'<tool-tip[^>]*for="(contribution-day-component-\d+-\d+)"[^>]*>\s*([^<]*?)\s*</tool-tip>', html):
+            n = re.match(r"(\d+)", m.group(2))
+            tips[m.group(1)] = int(n.group(1)) if n else 0
+        out = []
+        for m in re.finditer(r'<td[^>]*data-date="(\d{4}-\d\d-\d\d)"[^>]*id="(contribution-day-component-(\d+)-(\d+))"[^>]*data-level="(\d)"', html):
+            cnt = tips.get(m.group(2), int(m.group(5)))
+            out.append((m.group(1), cnt, int(m.group(3)), int(m.group(4))))
+        return sorted(out) if len(out) > 300 else []
+    except Exception as e:  # fall back to the API
+        print("public calendar failed:", e)
+        return []
+
+
 def T(text, x, y, size, fill, anchor="start", ls=0):
     text = "".join(c if c in G else " " for c in str(text).upper())
     sc = size / UPM
@@ -42,6 +67,10 @@ u = fetch()["data"]["user"]
 cal = u["contributionsCollection"]["contributionCalendar"]
 days = [d for w in cal["weeks"] for d in w["contributionDays"]]
 today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+pub = public_calendar()
+if pub:
+    days = [{"date": d, "contributionCount": c} for d, c, _, _ in pub]
+    cal = {"totalContributions": sum(c for _, c, _, _ in pub)}
 days = [d for d in days if d["date"] <= today]
 counts = [d["contributionCount"] for d in days]
 longest = cur = 0

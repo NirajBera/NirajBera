@@ -16,9 +16,38 @@ def fetch():
     return json.load(urllib.request.urlopen(req))
 
 
-weeks = fetch()["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
-grid = [[d["contributionCount"] for d in w["contributionDays"]] for w in weeks]  # grid[col][row]
-cols = len(grid)
+def public_calendar():
+    """Contribution days as shown on the public profile page (includes private contributions when the
+    profile has 'Private contributions' turned on). Returns [(date, count, row, col)] or [] on failure."""
+    import re
+    try:
+        fx = os.environ.get("FIXTURE_HTML")
+        if fx:
+            html = open(fx, encoding="utf-8").read()
+        else:
+            req = urllib.request.Request(f"https://github.com/users/{USER}/contributions", headers={"User-Agent": "Mozilla/5.0 profile-readme"})
+            html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "replace")
+        tips = {}
+        for m in re.finditer(r'<tool-tip[^>]*for="(contribution-day-component-\d+-\d+)"[^>]*>\s*([^<]*?)\s*</tool-tip>', html):
+            n = re.match(r"(\d+)", m.group(2))
+            tips[m.group(1)] = int(n.group(1)) if n else 0
+        out = []
+        for m in re.finditer(r'<td[^>]*data-date="(\d{4}-\d\d-\d\d)"[^>]*id="(contribution-day-component-(\d+)-(\d+))"[^>]*data-level="(\d)"', html):
+            cnt = tips.get(m.group(2), int(m.group(5)))
+            out.append((m.group(1), cnt, int(m.group(3)), int(m.group(4))))
+        return sorted(out) if len(out) > 300 else []
+    except Exception as e:  # fall back to the API
+        print("public calendar failed:", e)
+        return []
+
+
+pub = public_calendar()
+if pub:
+    cell = {(c, r): n for _, n, r, c in pub}
+else:
+    weeks = fetch()["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+    cell = {(c, d["weekday"]): d["contributionCount"] for c, w in enumerate(weeks) for d in w["contributionDays"]}
+cols = max(c for c, _ in cell) + 1
 CS, GAP, PAD = 13, 3, 16
 STEP = CS + GAP
 W = PAD * 2 + cols * STEP - GAP
@@ -28,14 +57,14 @@ SEG, D = 7, 0.07  # snake length, seconds per cell
 # zig-zag path (col 0 down, col 1 up, ...)
 order = []
 for c in range(cols):
-    rows = range(len(grid[c])) if c % 2 == 0 else range(len(grid[c]) - 1, -1, -1)
+    rows = range(7) if c % 2 == 0 else range(6, -1, -1)
     for r in rows:
         order.append((c, r))
 N = len(order)
 T = (N + SEG + 8) * D
 cx = lambda c: PAD + c * STEP
 cy = lambda r: PAD + r * STEP
-mx = max([v for col in grid for v in col] + [1])
+mx = max(list(cell.values()) + [1])
 
 
 def build(dark):
@@ -44,7 +73,9 @@ def build(dark):
     snake = "#ffffff" if dark else "#000000"
     s = f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}"><rect width="{W}" height="{H}" rx="6" fill="{bg}"/>'
     for i, (c, r) in enumerate(order):
-        v = grid[c][r]
+        if (c, r) not in cell:
+            continue
+        v = cell[(c, r)]
         if v:
             L = lv[min(3, int(v / mx * 3.99))]
             t = i * D / T
