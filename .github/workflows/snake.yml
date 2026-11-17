@@ -22,12 +22,11 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
         run: python3 .github/scripts/telemetry.py
 
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#000000&color_dots=#e5e5e5,#bdbdbd,#888888,#555555,#222222
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#ffffff&color_dots=#1f1f1f,#4d4d4d,#808080,#b3b3b3,#ffffff
+      - name: Build snake
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 .github/scripts/snake.py
 
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
