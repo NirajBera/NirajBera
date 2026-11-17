@@ -33,14 +33,7 @@
 
 <img src="assets/s04.svg" alt="04 — telemetry" width="100%" />
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=NirajBera&show_icons=true&hide_border=true&bg_color=000000&title_color=ffffff&text_color=bbbbbb&icon_color=ffffff&count_private=true" alt="GitHub stats" />
-<img height="170" src="https://streak-stats.demolab.com?user=NirajBera&hide_border=true&background=000000&stroke=333333&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=aaaaaa&dates=777777" alt="Streak" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=NirajBera&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&area_color=ffffff&title_color=ffffff&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" alt="Contribution telemetry" width="100%" />
-
-</div>
+<img src="https://raw.githubusercontent.com/NirajBera/NirajBera/output/telemetry.svg" alt="live GitHub telemetry: contributions, streaks, last 30 days" width="100%" />
 
 <br/>
 
