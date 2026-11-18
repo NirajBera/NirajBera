@@ -2,7 +2,6 @@
 
 <a name="n1"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/header.svg" alt="Niraj Bera — full stack web developer. Makes web pages feel alive." width="100%" /></a>
 
-<a href="https://techiebutler.com"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/b_tb.svg" alt="Techiebutler" height="46" /></a>
 <a href="https://www.linkedin.com/in/niraj-bera-09b9ba1a2/"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/b_in.svg" alt="LinkedIn" height="46" /></a>
 <a href="mailto:beraniraj2503@gmail.com"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/b_mail.svg" alt="Email" height="46" /></a>
 <a href="https://github.com/NirajBera"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/b_gh.svg" alt="GitHub" height="46" /></a>
@@ -12,7 +11,7 @@
 <br/>
 
 <a name="n2"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/s01.svg" alt="01 — about" width="100%" /></a>
-<a name="n3"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/about.svg" alt="Hi, I'm Niraj. Full stack web developer from India. Frontends at Techiebutler with Next.js and GSAP, backends with Node, Express and PostgreSQL." width="100%" /></a>
+<a name="n3"><img src="https://raw.githubusercontent.com/NirajBera/NirajBera/main/assets/about.svg" alt="Hi, I'm Niraj. Full stack web developer from India. Frontends with Next.js and GSAP, backends with Node, Express and PostgreSQL." width="100%" /></a>
 
 <br/>
 
